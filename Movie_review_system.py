@@ -154,7 +154,7 @@ class MovieReviewGUI(QWidget):
             self.show_error(f"Unexpected error: {e}")
 
     def fetch_movie_data(self, movie_name):
-        api_key = "970953e03a74f86bc92a2d07ca5befe0"
+        api_key = "YOUR_TMDB_API_KEY"
         url = f"https://api.themoviedb.org/3/search/movie?api_key={api_key}&query={movie_name}"
         try:
             response = requests.get(url, timeout=5)
